@@ -23,49 +23,97 @@
 
 
 
-# Getting Started with Create React App
+# MS Windows - Install Development Tools
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this guide, we will install the following development tools
 
-## Available Scripts
+* Visual Studio Code
+* node
+* npm
+* tsc
 
-In the project directory, you can run:
+## Versions
 
-### `npm start`
+This course has been tested with the following software versions:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* npm 8.15
+* node 16.17.0
+* tsc 4.7.4
+* React 18.2.0
+* Spring Boot 2.7.3 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+It is **highly recommended** that you use the versions listed above to make sure you do not encounter any issues with the course. If you choose to use other versions then the code may not work as expected.
 
-### `npm test`
+## Install Visual Studio Code
+Visual Studio Code is a general purpose IDE that support many programming languages. Visual Studio Code has built-in support for TypeScript.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. In a web browser, visit https://code.visualstudio.com/
+2. Follow the link to download Visual Studio Code for MS Windows
 
-### `npm run build`
+3. Run the Installer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Follow the steps in the Installer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Install Node
+Node is the the runtime environment for executing JavaScript code from the command-line. By using Node, you can create any type of application using JavaScript including server-side / backend applications.
 
-### `npm run eject`
+In this course, we'll use Node to run applications that we develop using TypeScript and React.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> Note: This course has been tested with Node 16.17.0. We will install this version.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. In your web browser, visit https://nodejs.org/download/release/v16.17.0/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Select the **Windows Installer (.msi)** for your system (32-bit or 64-bit)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Run the Installer
 
-## Learn More
+4. Follow the steps in the Installer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open a **Command Prompt** window to verify the node installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. In the **Command Prompt** window, type the following command: 
+
+    ```bash
+    node --version
+    ```
+
+   If the installation is successful, you will see the version number
+
+   > Note: The Node installation also includes npm (Node Package Manager).
+
+3. Verify npm is installed
+
+    ```bash
+    npm --version
+    ```
+
+   If the installation is successful, you will see the version number. 
+
+   > Note: node will have a different number than npm. This is similar to a different Java JDK version number compared to Maven version number.
+   >
+   > In this example, node is similar to the Java JDK.  And npm is similar to Maven.
+
+## Install tsc
+tsc is the TypeScript compiler. We use tsc to compile TypeScript code into JavaScript code. We can install the TypeScript compile using the Node Package Manager (npm)
+
+> Note: This course has been tested with TypeScript 4.7. We will install this version.
+
+1. In your **Command Prompt** window, enter the following command
+
+    ```
+    npm install --location=global typescript@4.7.4
+    ```
+
+   The "--location=global" installs this as a global package. The TypeScript compiler will be available to all directories for this user.
+
+2. You can verify the installation
+
+    ```bash
+    tsc --version
+    ```
+
+   If the installation is successful, you will see the version number.
+
+That's it! You have successfully installed the development tools: Visual Studio Code, node, npm and tsc.
+
