@@ -58,10 +58,6 @@ Visual Studio Code is a general purpose IDE that support many programming langua
 ## Install Node
 Node is the the runtime environment for executing JavaScript code from the command-line. By using Node, you can create any type of application using JavaScript including server-side / backend applications.
 
-In this course, we'll use Node to run applications that we develop using TypeScript and React.
-
-> Note: This course has been tested with Node 16.17.0. We will install this version.
-
 1. In your web browser, visit https://nodejs.org/download/release/v16.17.0/
 
 2. Select the **Windows Installer (.msi)** for your system (32-bit or 64-bit)
